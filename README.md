@@ -12,7 +12,7 @@
 pip install pip-tools
 pip-compile -o requirements.txt pyproject.toml
 pip-compile --extra dev -o dev-requirements.txt pyproject.toml
-pip install -r dev-requirements.txt
+pip-sync requirements.txt dev-requirements.txt
 
 # jupyter lab
 # jupyter notebook

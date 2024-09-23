@@ -30,3 +30,12 @@ repos:
   hooks:
   - id: yamllint
     args: [-c=./.yamllint]
+- repo: https://github.com/jazzband/pip-tools
+  rev: 7.4.1
+  hooks:
+  - id: pip-compile
+    files: ^pyproject.toml$
+    args: [--output-file=requirements.txt]
+  - id: pip-compile
+    files: ^pyproject.toml$
+    args: [--extra=dev, --output-file=dev-requirements.txt]
