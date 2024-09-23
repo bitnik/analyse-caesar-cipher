@@ -1,0 +1,14 @@
+---
+extends: default
+
+# ignore: |
+#   charts/*/templates
+
+rules:
+  line-length:
+    max: 160
+  document-start:
+    present: true
+  indentation:
+    level: error
+    indent-sequences: consistent

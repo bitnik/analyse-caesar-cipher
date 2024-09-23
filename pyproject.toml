@@ -1,0 +1,58 @@
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+[project]
+name = "analyse-caesar-cipher"
+version = "0.1.0"
+dependencies = [
+  "jupyterlab==4.2.5",
+  "notebook==7.2.2",
+  "matplotlib==3.9.2",
+]
+requires-python = ">=3.12"
+authors = [
+  {name = "bitnik", email = "kenanerdogan@gmail.com"},
+]
+maintainers = [
+  {name = "bitnik", email = "kenanerdogan@gmail.com"},
+]
+description = "analyse-caesar-cipher"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["frequency", "analysis", "caesar", "cipher"]
+classifiers = [
+#   "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "pip-tools"
+]
+
+# [project.optional-dependencies]
+# gui = ["PyQt5"]
+# cli = [
+#   "rich",
+#   "click",
+# ]
+
+[project.urls]
+Homepage = "https://github.com/bitnik/analyse-caesar-cipher"
+Documentation = "https://github.com/bitnik/analyse-caesar-cipher"
+Repository = "https://github.com/bitnik/analyse-caesar-cipher"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+# ignore = [
+#     "F841", # unused variable
+# ]
+select = [
+    # "E9", # syntax
+    "I", # isort
+    "UP", # pyupgrade
+    # TODO
+    # "F", # flake8
+]

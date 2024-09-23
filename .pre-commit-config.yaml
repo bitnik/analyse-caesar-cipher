@@ -1,0 +1,32 @@
+---
+ci:
+  autoupdate_schedule: monthly
+
+repos:
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.6.3
+  hooks:
+  - id: ruff
+    args:
+    - --fix
+    # - --unsafe-fixes
+    - --show-fixes
+  - id: ruff-format
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: check-added-large-files
+  # - id: check-ast
+  - id: check-case-conflict
+  # - id: check-executables-have-shebangs
+  # - id: check-shebang-scripts-are-executable
+  - id: check-yaml
+  - id: check-toml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  # - id: requirements-txt-fixer
+- repo: https://github.com/adrienverge/yamllint.git
+  rev: v1.35.1
+  hooks:
+  - id: yamllint
+    args: [-c=./.yamllint]
