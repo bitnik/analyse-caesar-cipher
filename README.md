@@ -15,7 +15,8 @@ pip-compile --extra dev -o dev-requirements.txt pyproject.toml
 pip-sync requirements.txt dev-requirements.txt
 
 # jupyter lab
+jupyter lab analyse_caesar_cipher.ipynb --port 8888
 # jupyter notebook
-jupyter notebook analyse_caesar_cipher.ipynb --port 8888
+# jupyter notebook analyse_caesar_cipher.ipynb --port 8888
 # jupyter notebook --no-browser
 ```

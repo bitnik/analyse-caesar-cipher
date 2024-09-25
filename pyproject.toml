@@ -14,7 +14,7 @@ authors = [
 maintainers = [
   {name = "bitnik", email = "kenanerdogan@gmail.com"},
 ]
-description = "analyse-caesar-cipher"
+description = "Frequency Analysis on Caesar Cipher"
 readme = "README.md"
 license = {file = "LICENSE"}
 keywords = ["frequency", "analysis", "caesar", "cipher"]
