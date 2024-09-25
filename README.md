@@ -12,7 +12,7 @@ This is a static site powered by [JupyterLite](https://jupyterlite.readthedocs.i
 
 ## Run on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bitnik/analyse-caesar-cipher/HEAD?labpath=analyse_caesar_cipher.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bitnik/analyse-caesar-cipher/HEAD?labpath=content%2Fanalyse_caesar_cipher.ipynb)
 
 By clicking the badge above, you can run this project on [mybinder.org](https://mybinder.readthedocs.io/en/latest/).
 
@@ -31,9 +31,9 @@ Run jupyter lab server:
 
 ```sh
 # jupyter lab
-jupyter lab analyse_caesar_cipher.ipynb --port 8888
+jupyter lab content/analyse_caesar_cipher.ipynb --port 8888
 # jupyter notebook
-# jupyter notebook analyse_caesar_cipher.ipynb --port 8888
+# jupyter notebook content/analyse_caesar_cipher.ipynb --port 8888
 # jupyter notebook --no-browser
 
 # jupyter labextension list
