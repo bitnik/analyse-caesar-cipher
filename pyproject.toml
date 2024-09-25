@@ -8,6 +8,7 @@ dependencies = [
   # Python kernel for jupyterlite
   "jupyterlite-pyodide-kernel==0.4.2",
   "matplotlib==3.9.2",
+  "nbdime==4.0.2",
 ]
 requires-python = ">=3.12"
 authors = [

@@ -10,6 +10,9 @@ https://bitnik.github.io/analyse-caesar-cipher/
 
 This is a static site powered by [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) and deployed on [GitHub Pages](https://pages.github.com/).
 
+**Important**: All changes you make there, they will be stored in browser storage.
+If you want to revert all changes, you should clear the site data in your browser.
+
 ## Run on Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bitnik/analyse-caesar-cipher/HEAD?labpath=notebooks%2Fanalyse_caesar_cipher.ipynb)
@@ -30,12 +33,12 @@ pip-sync requirements.txt dev-requirements.txt
 Run jupyter lab server:
 
 ```sh
-# jupyter lab
+# Disable classic notebook view
+jupyter server extension disable nbclassic
+# Run jupyter lab
 jupyter lab notebooks/analyse_caesar_cipher.ipynb --port 8888
-# jupyter notebook
-# jupyter notebook notebooks/analyse_caesar_cipher.ipynb --port 8888
-# jupyter notebook --no-browser
 
+# jupyter server extension list
 # jupyter labextension list
 ```
 
