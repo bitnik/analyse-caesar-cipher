@@ -6,7 +6,7 @@ There are 3 options to run this project.
 
 ## Run on Remote
 
-https://bitnik.github.io/analyse-caesar-cipher/
+https://bitnik.github.io/analyse-caesar-cipher/lab/index.html?path=analyse_caesar_cipher.ipynb
 
 This is a static site powered by [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) and deployed on [GitHub Pages](https://pages.github.com/).
 

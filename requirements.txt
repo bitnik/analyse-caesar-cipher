@@ -39,6 +39,8 @@ charset-normalizer==3.3.2
     # via requests
 cloudpickle==3.0.0
     # via doit
+colorama==0.4.6
+    # via nbdime
 comm==0.2.2
     # via ipykernel
 contourpy==1.3.0
@@ -61,6 +63,10 @@ fonttools==4.54.1
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
+gitdb==4.0.11
+    # via gitpython
+gitpython==3.1.43
+    # via nbdime
 h11==0.14.0
     # via httpcore
 httpcore==1.0.5
@@ -89,6 +95,7 @@ jinja2==3.1.4
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+    #   nbdime
 json5==0.9.25
     # via jupyterlab-server
 jsonpointer==3.0.0
@@ -122,9 +129,13 @@ jupyter-lsp==2.2.5
 jupyter-server==2.14.2
     # via
     #   jupyter-lsp
+    #   jupyter-server-mathjax
     #   jupyterlab
     #   jupyterlab-server
+    #   nbdime
     #   notebook-shim
+jupyter-server-mathjax==0.2.6
+    # via nbdime
 jupyter-server-terminals==0.5.3
     # via jupyter-server
 jupyterlab==4.2.5
@@ -157,11 +168,14 @@ nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.4
     # via jupyter-server
+nbdime==4.0.2
+    # via analyse-caesar-cipher (pyproject.toml)
 nbformat==5.10.4
     # via
     #   jupyter-server
     #   nbclient
     #   nbconvert
+    #   nbdime
 nest-asyncio==1.6.0
     # via ipykernel
 notebook-shim==0.2.4
@@ -210,6 +224,7 @@ pygments==2.18.0
     # via
     #   ipython
     #   nbconvert
+    #   nbdime
 pyparsing==3.1.4
     # via matplotlib
 python-dateutil==2.9.0.post0
@@ -232,7 +247,9 @@ referencing==0.35.1
     #   jsonschema-specifications
     #   jupyter-events
 requests==2.32.3
-    # via jupyterlab-server
+    # via
+    #   jupyterlab-server
+    #   nbdime
 rfc3339-validator==0.1.4
     # via
     #   jsonschema
@@ -253,6 +270,8 @@ six==1.16.0
     #   bleach
     #   python-dateutil
     #   rfc3339-validator
+smmap==5.0.1
+    # via gitdb
 sniffio==1.3.1
     # via
     #   anyio
@@ -273,6 +292,7 @@ tornado==6.4.1
     #   jupyter-client
     #   jupyter-server
     #   jupyterlab
+    #   nbdime
     #   terminado
 traitlets==5.14.3
     # via

@@ -6,7 +6,8 @@
     "disabledExtensions": [
       "@jupyterlab/drawio-extension",
       "jupyterlab-kernel-spy",
-      "jupyterlab-tour"
+      "jupyterlab-tour",
+      "@jupyterlab/console-extension"
     ],
     "settingsStorageName": "jupyterlite-analyse-caesar-cipher-storage"
   }
