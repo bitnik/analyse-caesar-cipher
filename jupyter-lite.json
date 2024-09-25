@@ -1,16 +1,13 @@
 {
-    "description": "The jupyter-lite.json file is used to configure the runtime configuration of JupyterLite.",
-    "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "appName": "analyse-caesar-cipher",
-      "disabledExtensions": [
-        "@jupyterlab/drawio-extension",
-        "jupyterlab-kernel-spy",
-        "jupyterlab-tour"
-      ],
-      "settingsStorageName": "jupyterlite-analyse-caesar-cipher-storage",
-      "LiteBuildConfig": {
-        "ignore_sys_prefix": ["federated_extensions"]
-      }
-    }
+  "description": "The jupyter-lite.json file is used to configure the runtime configuration of JupyterLite.",
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "appName": "analyse-caesar-cipher",
+    "disabledExtensions": [
+      "@jupyterlab/drawio-extension",
+      "jupyterlab-kernel-spy",
+      "jupyterlab-tour"
+    ],
+    "settingsStorageName": "jupyterlite-analyse-caesar-cipher-storage"
   }
+}

@@ -1,0 +1,9 @@
+{
+  "description": "This file is used to configure the build time configuration of JupyterLite.",
+  "LiteBuildConfig": {
+    "contents": [
+      "notebooks"
+    ],
+    "output_dir": "dist"
+  }
+}

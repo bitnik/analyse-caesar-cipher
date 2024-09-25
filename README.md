@@ -43,6 +43,6 @@ Or run JupyterLite server:
 
 ```sh
 # https://jupyterlite.readthedocs.io/en/stable/quickstart/standalone.html
-jupyter lite build --contents notebooks
-jupyter lite serve
+jupyter lite build
+jupyter lite serve --port 8889
 ```
