@@ -4,13 +4,13 @@
 
 There are 3 options to run this project.
 
-## Run on Remote
+## Run in your browser
 
 https://bitnik.github.io/analyse-caesar-cipher/lab/index.html?path=analyse_caesar_cipher.ipynb
 
 This is a static site powered by [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/)
-(using [pyodide](https://pyodide.org/en/stable/) kernel)
 and deployed on [GitHub Pages](https://pages.github.com/).
+It uses a Python kernel backed by [Pyodide](https://pyodide.org/en/stable/) running in a Web Worker.
 
 **Important**: All changes you make there, they will be stored in browser storage.
 If you want to revert all changes, you should clear the site data in your browser.
